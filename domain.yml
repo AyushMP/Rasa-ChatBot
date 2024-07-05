@@ -1,0 +1,35 @@
+version: '3.1'
+intents:
+- affirm
+- ask_aiml
+- bot_challenge
+- deny
+- goodbye
+- greet
+- mood_great
+- mood_unhappy
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_ask_aiml:
+  - text: AIML stands for Artificial Intelligence Markup Language. It's an XML-based language used for creating chatbots and virtual assistants. AIML is often used with tools like Pandorabots and Program O.
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+actions:
+  - utter_greet
+  - utter_did_that_help
+  - utter_ask_aiml
+  - action_retrieve_answer  # <- Add a colon after the hyphen
+  - action_default_fallback

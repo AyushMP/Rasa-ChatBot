@@ -1,0 +1,62 @@
+/* App.css */
+
+.App {
+  background-color: black; /* Set the background color of the entire app to black */
+  color: white; /* Set text color to white */
+  height: 100vh; /* Make the app container fill the entire viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat-container {
+  width: 80%; /* Set the width of the chat container */
+  height: 60vh; /* Set the height of the chat container */
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  padding: 20px;
+  background-color: #333; /* Dark gray background color */
+  border-radius: 10px; /* Add some border radius for rounded corners */
+}
+
+.user-message {
+  background-color: #4CAF50; /* Green background for user messages */
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.bot-message {
+  background-color: #2196F3; /* Blue background for bot messages */
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.input-container {
+  width: 80%; /* Set the width of the input container */
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.input-field {
+  flex: 1; /* Take up remaining space in the input container */
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.send-button {
+  padding: 10px 20px;
+  background-color: #2196F3; /* Blue send button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: #0b7dda; /* Darker shade of blue on hover */
+}
